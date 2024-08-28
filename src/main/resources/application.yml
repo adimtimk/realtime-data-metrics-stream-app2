@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: realtime-metrics-app
+  
+
+  kafka:
+    streams:
+      application-id: realtime-metris-app
+      bootstrap-servers:
+      - localhost:9092
+    consumer:
+      properties:
+        spring.json.trusted.packages: "*"
+      
+server:
+  port: 8090  
+
+  
